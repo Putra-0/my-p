@@ -11,10 +11,10 @@
   font-family: "Poppins", sans-serif;
 }
 :root {
-  --main-color: #0400e0;
+  --main-color: #0085c7;
   --bg-color: #fff;
   --text-color: #0b091a;
-  --hover: hsl(244, 100%, 51%);
+  --hover: hsl(204, 100%, 51%);
 
   --big-font: 3.2rem;
   --medium-font: 1.8rem;
@@ -51,10 +51,10 @@ header {
 header.shadow {
   box-shadow: 0 0 4px rgb(14 55 54 / 15%);
 }
-.logo {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-color);
+
+.logo img{
+  width: 120px;
+  padding: 0;
 }
 .navbar {
   display: flex;
@@ -81,7 +81,7 @@ header.shadow {
 .home {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 92vh;
   display: grid;
   grid-template-columns: 0.2fr 1fr 1fr;
   align-items: center;
@@ -350,6 +350,8 @@ form textarea {
   background: var(--bg-color);
   text-align: center;
   color: var(--text-color);
+  display: grid;
+  bottom: 0;
 }
 /* Making Responsive */
 @media (max-width: 991px) {
