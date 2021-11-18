@@ -361,6 +361,9 @@ form textarea {
   opacity: .8;
   width: 100%;
 }
+.copyright a{
+  color: var(--main-color);
+}
 /* Making Responsive */
 @media (max-width: 991px) {
   header {
