@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Payment Portal | BashSupn</title>
+	<meta name="description" content="Donation and Payment Portal by BashSupn.">
+    <link rel="icon" href="../assets/img/logo/icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/styles.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<div class="col text-center tcolor mx-auto">
+<div class="d-flex justify-content-center mt-5"><img src="../assets/img/logo/logo.png" alt="main-image" loading="lazy" style="max-height: 40vh;"></div>
+
+<div class="d-flex justify-content-center">
+	<h5 class="my-2"><strong>Welcome</strong></h5>
+</div>
+<div class="text-center d-flex d-xl-flex justify-content-center justify-content-xl-center">
+	<p class="text-center d-xl-flex justify-content-xl-center w-75">Want to support us or pay our service? Click icon below to choose payment methode.<br> Thank you!</p>
+</div>
+<div class="d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-md-center justify-content-lg-center justify-content-xl-center mt-3">
+<div class="row mx-2" style="max-width: 614px;">
+	<div class="col">
+	<a id="btn-qris" href="#">
+	<div><img src="../assets/img/pay/img-qris.svg" alt="bca"></div>
+	<p class="tcolor">QRIS</p>
+	</a>
+	</div>
+	<div class="col">
+	<a id="btn-dana" href="#">
+	<div><img src="../assets/img/pay/img-dana.svg" alt="dana"></div>
+	<p class="tcolor">Dana</p>
+	</a>
+	</div>
+    <div class="col">
+	<a id="btn-gopay" href="#">
+	<div><img src="../assets/img/pay/img-gopay.svg" alt="gopay"></div>
+	<p class="tcolor">Gopay</p>
+	</a>
+	</div>
+    <div class="col">
+	<a id="btn-linkaja" href="#">
+	<div><img src="../assets/img/pay/img-linkaja.svg" alt="linkaja"></div>
+	<p class="tcolor">LinkAja</p>
+	</a>
+	</div>
+	<div class="col">
+	<a id="btn-shopeepay" href="#">
+	<div><img src="../assets/img/pay/img-shopeepay.svg" alt="shopeepay"></div>
+	<p class="tcolor">ShopeePay</p>
+	</a>
+	</div>
+    <div class="col">
+	<a id="btn-trakteer" href="#">
+	<div><img src="../assets/img/pay/trakteer-icon.png" width="45" alt="trakteer"></div>
+	<div style="padding: 6px;"></div>
+    <p class="tcolor">Trakteer</p>
+	</a>
+	</div>
+	<!--<div class="col">
+	<a id="btn-paypal" href="#">
+	<div><img src="assets/img/img-paypal.svg" alt="paypal"></div>
+	<p class="tcolor">Paypal</p>
+	</a>
+	</div>
+-->
+</div>
+</div>
+<br>
+<!-- Copyright -->
+        <div class="copyright">
+            <p>Copyrights &#169; 2021 - <a href="https://bashsupn.my.id">BashSupn</a> All Right Reserved.</p>
+        </div>
+</div>
+
+<div class="modal fade" role="dialog" tabindex="-1" id="qr-qris">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal-content">
+	<div class="modal-header">
+	<h4 class="modal-title" style="font-size: 1.2em;"><strong>Payment Via QRIS</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+	<div class="modal-body">
+	<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center"><img class="w-75 h-75" src="../assets/img/pay/qr-qris.png"></div>
+	<p class="text-center mx-auto"><strong>a.n Putra Coder</strong></p>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+	</div>
+	</div>
+	</div>
+</div>
+
+<!--
+<div class="modal fade" role="dialog" tabindex="-1" id="qr-bca">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal-content">
+	<div class="modal-header">
+	<h4 class="modal-title" style="font-size: 1.2em;"><strong>Payment Via BCA/QRIS</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+	<div class="modal-body">
+	<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center"><img class="w-75 h-75" src="assets/img/qr-bca.svg"></div>
+	<p class="text-center mx-auto"><strong>4640041710 a.n Helmi Amirudin</strong></p>
+	
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" type="button" onclick="SalinAku('4640041710')">Copy Number</button>
+		<button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+	</div>
+	</div>
+	</div>
+</div>
+-->
+<!--
+<div class="modal fade" role="dialog" tabindex="-1" id="qr-jenius">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal-content">
+	<div class="modal-header">
+	<h4 class="modal-title" style="font-size: 1.2em;"><strong>Payment Via Jenius/BTPN</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+	<div class="modal-body">
+	<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center"><img class="w-75 h-75" src="assets/img/img-jenius.svg"></div>
+	<p class="text-center mx-auto"><strong>90370026872 a.n Helmi Amirudin</strong></p>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" type="button" onclick="SalinAku('$helmiau')">Cashtag</button>
+		<button class="btn btn-primary" type="button" onclick="SalinAku('90370026872')">Copy Number</button>
+		<button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+	</div>
+	</div>
+	</div>
+</div>
+-->
+
+<div class="modal fade" role="dialog" tabindex="-1" id="qr-dana">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal-content">
+	<div class="modal-header">
+	<h4 class="modal-title" style="font-size: 1.2em;"><strong>Payment Via Dana</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+	<div class="modal-body">
+	<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center"><img class="w-75 h-75" src="../assets/img/pay/qr-dana.png"></div>
+	<br>
+    <p class="text-center mx-auto"><strong>a.n Nur Rahmat Adi Saputra</strong></p>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" type="button" onclick="SalinAku('082241638306')">Salin Nomor</button>
+		<button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+	</div>
+	</div>
+	</div>
+</div>
+<div class="modal fade" role="dialog" tabindex="-1" id="qr-gopay">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal-content">
+	<div class="modal-header">
+	<h4 class="modal-title" style="font-size: 1.2em;"><strong>Payment Via Gopay</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+	<div class="modal-body">
+	<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center"><img class="w-75 h-75" src="assets/img/qr-gopay.png"></div>
+	
+	<p class="text-center mx-auto"><strong>a.n Nur Rahmat Adi Saputra</strong></p>
+	
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" type="button" onclick="SalinAku('082241638306')">Copy Number</button>
+		<button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+	</div>
+	</div>
+	</div>
+</div>
+<div class="modal fade" role="dialog" tabindex="-1" id="qr-linkaja">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal-content">
+	<div class="modal-header">
+	<h4 class="modal-title" style="font-size: 1.2em;"><strong>Payment Via LinkAja</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+	<div class="modal-body">
+	<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center"><img class="w-75 h-75" src="../assets/img/pay/qr-linkaja.png"></div>
+	<p class="text-center mx-auto"><strong>a.n Nur Rahmat Adi Saputra</strong></p>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" type="button" onclick="SalinAku('082241638306')">Copy Number</button>
+		<button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+	</div>
+	</div>
+	</div>
+</div>
+<div class="modal fade" role="dialog" tabindex="-1" id="qr-gopay">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal-content">
+	<div class="modal-header">
+	<h4 class="modal-title" style="font-size: 1.2em;"><strong>Payment Via GoPay</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+	<div class="modal-body">
+	<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center"><img class="w-75 h-75" src="../assets/img/pay/qr-gopay.png"></div>
+	<p class="text-center mx-auto"><strong>a.n Nur Rahmat Adi Saputra</strong></p>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" type="button onclick="SalinAku('082241638306')"">Copy Number</button>
+		<button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+	</div>
+	</div>
+	</div>
+</div>
+<div class="modal fade" role="dialog" tabindex="-1" id="qr-shopeepay">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal-content">
+	<div class="modal-header">
+	<h4 class="modal-title" style="font-size: 1.2em;"><strong>Payment Via ShopeePay</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+	<div class="modal-body">
+	<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center"><img class="w-75 h-75" src="../assets/img/pay/qr-shopeepay.png"></div>
+	<!--
+	<p class="text-center mx-auto"><strong>085852222724 a.n Helmi Amirudin</strong></p>
+	<p class="text-center mx-auto tcolor">Atau gunakan <a class="tcolor" href="https://shp.ee/cc8g5mt" aria-label="paypal-helmiau"><strong>tautan ini</strong></a> untuk membuka aplikasi Shopee.</p>
+	-->
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" type="button" onclick="SalinAku('081929684328')">Copy Number</button>
+		<button class="btn btn-primary" type="button" onclick="window.open('https://shp.ee/ua2e3dy?smtt=0.0.3','_blank')">Open Shopee</button>
+		<button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+	</div>
+	</div>
+	</div>
+</div>
+<div class="modal fade" role="dialog" tabindex="-1" id="trakteer">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal-content">
+	<div class="modal-header">
+	<h4 class="modal-title" style="font-size: 1.2em;"><strong>Trakteer Coffe</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+	<div class="modal-body">
+        <center>
+            <script type='text/javascript' src='https://cdn.trakteer.id/js/embed/trbtn-overlay.min.js'></script><script type='text/javascript'>(function() {var trbtnId = trbtnOverlay.init('Trakteer','#be1e2d','https://trakteer.id/bashsupn/tip/embed/modal','https://cdn.trakteer.id/images/embed/trbtn-icon.png','40','inline');trbtnOverlay.draw(trbtnId);})();</script>
+        </center>
+	<!--<p class="text-center mx-auto"><strong>a.n Nur Rahmat Adi Saputra</strong></p>
+    -->
+	</div>
+
+	</div>
+	</div>
+</div>
+<!--
+<div class="modal fade" role="dialog" tabindex="-1" id="qr-paypal">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal-content">
+	<div class="modal-header">
+	<h4 class="modal-title" style="font-size: 1.2em;"><strong>Payment Via Paypal</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+	<div class="modal-body">
+	<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center"><img class="d-flex d-sm-flex w-75 h-75" src="assets/img/qr-paypal.svg"></div>
+	
+	<p class="text-center mx-auto">Atau kirim donasi ke akun Paypal <a class="tcolor" href="https://paypal.me/helmiau" aria-label="paypal-helmiau"><strong>Helmi Amirudin</strong></a>.</p>
+	
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" type="button" onclick="window.open('https://paypal.me/helmiau','_blank')">Open PayPal</button>
+		<button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+	</div>
+	</div>
+	</div>
+</div>
+
+-->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/script.min.js"></script>
+</body>
+</html>
