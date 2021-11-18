@@ -32,6 +32,20 @@ body {
     font-size: 12px;
 }
 
+.blog-content {
+    width: 90%;
+    max-width: 90rem;
+    padding: 2rem;
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: .8rem;
+    margin: 30px;
+    margin-left: 5%;
+    background: var(--bg-color);
+    font-size: 12px;
+}
+
 .blog-post_img {
     min-width: 30rem;
     max-width: 30rem;
