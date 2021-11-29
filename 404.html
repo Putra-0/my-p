@@ -120,7 +120,7 @@ body {
                 <div class="text">Page not found</div>
                 <div class="text">This may not mean anything.</div>
                 <div class="text">I'm probably working on something that has blown up.</div>
-                <a style="text-decoration:none" href="bashsupn.my.id"><button class="button-64" role="button">Back</button></a>
+                <button class="button-64" onclick="goBack()"><span class="text">Back</span></button>
             </div>
         </div>
     </div>
@@ -128,6 +128,11 @@ body {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.3up.dk/in-view@0.6.1"></script>  
 <script>
+     function goBack() {
+        window.history.back();
+    };
+    
+    
     var formatThousandsNoRounding = function(n, dp){
   var e = '', s = e+n, l = s.length, b = n < 0 ? 1 : 0,
       i = s.lastIndexOf(','), j = i == -1 ? l : i,
