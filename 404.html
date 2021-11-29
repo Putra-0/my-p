@@ -58,6 +58,25 @@ body {
         font-weight: 300;
         text-align: center;
     }
+        
+        .custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
         .btn-3 {
   background: rgb(0,172,238);
 background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
@@ -138,8 +157,8 @@ background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
                 <div class="text">Page not found</div>
                 <div class="text">This may not mean anything.</div>
                 <div class="text">I'm probably working on something that has blown up.</div>
-            </div>
-                            <button class="custom-btn btn-3" onclick="goBack()"><span>Back</span></button>
+                <button class="custom-btn btn-3" onclick="goBack()"><span>Back</span></button>
+            </div>            
         </div>
     </div>
 </div>
