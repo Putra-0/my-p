@@ -48,7 +48,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--bg-header);
+  background: var(--bg-color);
   padding: 5px 8%;
   transition: 0.2s;
 }
